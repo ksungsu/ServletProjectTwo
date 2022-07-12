@@ -7,7 +7,6 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.sql.*" %>
-<%--<%@ page import="TestServlet" %>--%>
 
 <%
   Connection con = null;
