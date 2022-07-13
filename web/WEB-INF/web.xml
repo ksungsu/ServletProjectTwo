@@ -3,10 +3,22 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
-
+    <display-name>ServletProjectTwo</display-name>
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
         <welcome-file>index.htm</welcome-file>
-        <welcome-file>getJsp.jsp</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>default.html</welcome-file>
+        <welcome-file>default.htm</welcome-file>
+        <welcome-file>default.jsp</welcome-file>
     </welcome-file-list>
+    <servlet>
+        <display-name>BoardFrontController</display-name>
+        <servlet-name>BoardFrontController</servlet-name>
+        <servlet-class>main.java.com.sungsu.controller.BoardFrontController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BoardFrontController</servlet-name>
+        <url-pattern>*.do</url-pattern>
+    </servlet-mapping>
 </web-app>

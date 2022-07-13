@@ -1,4 +1,4 @@
-package com.sungsu.dto;
+package main.java.com.sungsu.dto;
 
 import java.io.Serializable;
 import java.sql.Date;

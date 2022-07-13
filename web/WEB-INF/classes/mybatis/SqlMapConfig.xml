@@ -6,7 +6,7 @@
 <configuration>
         <properties resource = "com/sungsu/mybatis/db.properties"/>
         <typeAliases>
-            <typeAlias type = "com.sungsu.dto.BoardDTO" alias = "BoardDTO"/>
+            <typeAlias type = "com.sungsu.BoardDTO" alias = "BoardDTO"/>
         </typeAliases>
         <environments default = "development">
             <environment id = "development">
