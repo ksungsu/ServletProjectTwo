@@ -7,4 +7,9 @@
     <select id="boardSearchAll" resultType="BoardDTO">
         SELECT * FROM board_tb ORDER BY num DESC
     </select>
+
+    <insert id="boardInsert" parameterType="BoardDTO">
+        INSERT INTO board_tb
+        values (num, #{category}, #{writer}, #{title}, #{text}.#{password}, SYSDATE)
+    </insert>
 </mapper>

@@ -14,7 +14,9 @@ import java.util.List;
  */
 public class BoardListAction implements Action {
     @Override
-    public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+    public ActionForward execute(HttpServletRequest request,
+                                 HttpServletResponse response)
+            throws ServletException, IOException{
 
         //DAO 연동, 게시판 목록 출력(비즈니스 로직)
         BoardDAO dao = new BoardDAO();

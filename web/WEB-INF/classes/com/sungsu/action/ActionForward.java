@@ -1,4 +1,4 @@
-package main.java.com.sungsu.action;
+package com.sungsu.action;
 
 public class ActionForward {
     private String path;    // view page 경로(URL)와 파일명을 저장할 변수

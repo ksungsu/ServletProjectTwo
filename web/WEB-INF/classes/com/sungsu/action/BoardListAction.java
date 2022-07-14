@@ -1,7 +1,7 @@
-package main.java.com.sungsu.action;
+package com.sungsu.action;
 
-import main.java.com.sungsu.dao.BoardDAO;
-import main.java.com.sungsu.dto.BoardDTO;
+import com.sungsu.dao.BoardDAO;
+import com.sungsu.dto.BoardDTO;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -12,7 +12,7 @@ import java.util.List;
 /*
 페이지 연결을 담당하는 Action class
  */
-public class BoardListAction implements Action{
+public class BoardListAction implements Action {
     @Override
     public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
 

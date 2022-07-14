@@ -15,7 +15,6 @@ import java.io.IOException;
 
 @WebServlet("/BoardFrontController.do")
 public class BoardFrontController extends HttpServlet {
-    @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
 
@@ -31,6 +30,14 @@ public class BoardFrontController extends HttpServlet {
         if(command.equals("/boardList.do")){
             action = new BoardListAction(); //상위 객체쪽으로 업캐스팅(다형성)
             forward = action.execute(request, response);
+        } else if (command.equals("/boardInsertForm.do")) {
+            forward = new ActionForward();
+            forward.setPath("board/boardInsertForm.jsp");
+            forward.setRedirect(false); // url의 변화x, 화면만 전환.
+        } else if (command.equals("/boardInsert.do")) {
+            action = new BoardInsertAction();
+            forward = action.execute(request,response);
+
         }
 
         //페이지 전환(프레젠테이션 로직) : sendRedirect(), forward()
@@ -41,6 +48,7 @@ public class BoardFrontController extends HttpServlet {
         }else{                                  //false : forward() 페이지 전환
             RequestDispatcher rd = request.getRequestDispatcher(forward.getPath());
             rd.forward(request, response);
+            super.init();
         }
     }
 

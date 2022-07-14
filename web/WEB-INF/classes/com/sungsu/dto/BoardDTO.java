@@ -1,7 +1,8 @@
-package main.java.com.sungsu.dto;
+package com.sungsu.dto;
 
 import java.io.Serializable;
 import java.sql.Date;
+
 
 public class BoardDTO implements Serializable {
     private int num;
@@ -14,6 +15,7 @@ public class BoardDTO implements Serializable {
     private Date mod_date;
     private String password;
 
+    public BoardDTO() {}
     public BoardDTO(int num, String category, String writer, String title, String text, int hit,
                     Date create_date, Date mod_date, String password) {
         super();

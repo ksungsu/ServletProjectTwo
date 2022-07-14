@@ -11,5 +11,7 @@ import java.io.IOException;
 Servlet과 비슷한 역할을 하는 인터페이스
  */
 public interface Action {
-    public abstract ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException;
+    public abstract ActionForward execute(HttpServletRequest request,
+                                          HttpServletResponse response)
+                                        throws ServletException, IOException;
 }

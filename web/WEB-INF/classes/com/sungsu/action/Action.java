@@ -1,4 +1,6 @@
-package main.java.com.sungsu.action;
+package com.sungsu.action;
+
+import com.sungsu.action.ActionForward;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;

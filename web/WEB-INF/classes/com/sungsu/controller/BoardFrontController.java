@@ -1,8 +1,8 @@
-package main.java.com.sungsu.controller;
+package com.sungsu.controller;
 
-import main.java.com.sungsu.action.Action;
-import main.java.com.sungsu.action.ActionForward;
-import main.java.com.sungsu.action.BoardListAction;
+import com.sungsu.action.Action;
+import com.sungsu.action.ActionForward;
+import com.sungsu.action.BoardListAction;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -15,7 +15,6 @@ import java.io.IOException;
 
 @WebServlet("/BoardFrontController.do")
 public class BoardFrontController extends HttpServlet {
-    @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
 
