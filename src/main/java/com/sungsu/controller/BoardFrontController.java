@@ -2,6 +2,7 @@ package com.sungsu.controller;
 
 import com.sungsu.action.Action;
 import com.sungsu.action.ActionForward;
+import com.sungsu.action.BoardInsertAction;
 import com.sungsu.action.BoardListAction;
 
 import javax.servlet.RequestDispatcher;

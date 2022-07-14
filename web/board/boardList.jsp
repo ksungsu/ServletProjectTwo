@@ -22,7 +22,7 @@
 <body>
 <div align="center">
     <h3>게시판 전체 목록 보기</h3>
-    <table border="1">
+    <table style="border: 1px" >
         <tr>
             <th>카테고리</th>
             <th>제목</th>
@@ -37,10 +37,22 @@
         } else {
             for(int i = 0; i< list.size(); i++){
                 out.println("<tr align='center'/>");
-                out.println("<td>" + (list.size() - i));
+                    out.println("<td>" + (list.size() - i) + "</td>");
+                    out.println("<td>" + list.get(i).getCategory() + "</td>");
+                    out.println("<td>" + list.get(i).getTitle() + "</td>");
+                    out.println("<td>" + list.get(i).getWriter() + "</td>");
+                    out.println("<td>" + list.get(i).getHit() + "</td>");
+                    out.println("<td>" + list.get(i).getCreate_date() + "</td>");
+                    out.println("<td>" + list.get(i).getMod_date() + "</td>");
+                out.println("</tr>");
             }
         }
         %>
+        <tr style="align-content: center">
+            <td colspan="5">
+                <input type="button" value="글쓰기" onclick="location.href='boardInsertForm.do'"/>
+            </td>
+        </tr>
     </table>
 </div>
 </body>

@@ -30,6 +30,14 @@ public class BoardDTO implements Serializable {
         this.password = password;
     }
 
+    public BoardDTO(String writer, String title, String text, String password) {
+        super();
+        this.writer = writer;
+        this.title = title;
+        this.text = text;
+        this.password = password;
+    }
+
     public int getNum() {
         return num;
     }
